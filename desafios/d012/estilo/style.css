@@ -55,7 +55,11 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 1em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -66,13 +70,27 @@ section.normal {
 section.imagem {
     background-color: rgb(46, 46, 46);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
+    text-shadow: 2px 2px 0px black;
     display: inline-block;
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.425);
 
+}
+
+section#img01{
+    background-image: url('../imagens/joaninha.jpg');
+    background-position: center center;
+}
+
+section#img02{
+    background-image: url('../imagens/escrita.jpg');
+    background-position: center center;
 }
 
 footer {
