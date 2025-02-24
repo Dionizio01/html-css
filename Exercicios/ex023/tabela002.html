@@ -12,13 +12,25 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         
         caption{
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: gray;
+            background-color: whitesmoke;
+        }
+
+        thead, tfoot{
+            background-color: darkgray;
+            color: whitesmoke;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1;
+            background-color: darkgray;
         }
 
         td, th{
@@ -26,14 +38,15 @@
             padding: 10px;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
         td.número{
             text-align: right;
         }
 
-        thead, tfoot{
-            background-color: darkgray;
-            color: whitesmoke;
-        }
+        
 
     </style>
 </head>
