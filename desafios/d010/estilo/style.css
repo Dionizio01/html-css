@@ -42,6 +42,10 @@ main p {
     font-size: 1em;
 }
 
+a.externo {
+    text-decoration: none;
+}
+
 a.externo::after {
     content: '\00A0\🔗';
 }
@@ -69,6 +73,13 @@ header {
     padding-bottom: 10px;
 }
 
+header > p {
+    margin-bottom: 20px;
+    max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 header > h1 {
     padding: 20px;
     font-family: var(--fonte-destaque);
@@ -78,6 +89,7 @@ header > h1 {
 nav{
     background-color: var(--cor5);
     box-shadow: 2px 2px 2px black;
+    margin-bottom: 2px;
 }
 nav > a {
     font-weight: bold;
@@ -97,9 +109,9 @@ main{
     background-color: white;
     margin: auto;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     padding: 20px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
 }
 
 main  h1 {
