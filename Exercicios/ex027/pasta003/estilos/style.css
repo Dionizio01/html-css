@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.container{
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    flex-wrap: wrap-reverse;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.item{
+    background-color: brown;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    height: 30px;
+}
