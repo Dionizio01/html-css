@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/*
+    Paleta de corres
+    laranja #ff7944
+    marrom #964728    
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #964728;
+    height: 100vh;
+    width: 100vw;    
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
+
+    transition: width 0.1s, height 0.1s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #964728 url(../imagens/pexels-modus-vivendi-32084570.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#formulario > h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+}
+
+div#formulario > p{
+    padding: 10px;
+    text-align: justify;
+}
+
+p.campo {
+    background-color: rgba(89, 129, 14, 0.541);
+    display: block;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+p.campo span {
+    color: white;
+    background: black;
+    font-size: 2em;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+p.campo input{
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 38px;
+    transform: translateY(-12px);
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #964728;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 7px;
+    margin-top: 5px;
+    color: black;
+    border: 1px solid #a84f2c;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #bb5831;
+    color: whitesmoke;
+}
