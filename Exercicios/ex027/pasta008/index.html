@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex basis</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        section.container{
+            background-color: bisque;
+            height: 300px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        div{
+            
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 15px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div style="align-self: baseline;">A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </section>
+</body>
+</html>
