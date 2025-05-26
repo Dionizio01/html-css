@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Grow</title>
-    <style></style>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        section.container{
+            background-color: bisque;
+
+            display: flex;
+            flex-flow: row-reverse wrap;
+        }
+
+        div{
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 90px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
 </head>
 <body>
     <section class="container">
