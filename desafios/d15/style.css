@@ -1,2 +1,70 @@
 @charset "utf-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    background: linear-gradient(to right, black, gray) ;
+    color: whitesmoke;
+    text-align: center;
+    padding: 35px;
+}
+nav{
+    display: flex;
+    border: 2px solid gray;
+    background:linear-gradient(to right, black, gray);
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+nav > a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: fantasy;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+main > div.imagem {
+    background-image: url(imagens/joaninha.jpg);
+    background-size: cover;
+    border: 5px solid black;
+    width: 70vw;
+    height: 70vh;
+}
+
+div.imagem > img{
+    display: block;
+    width: 70vw;
+    height: 70vh;
+}
+
+article.resumo {
+    width: 30vw;
+    height: 70vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+article.resumo > h2{
+    padding-bottom: 10px;
+}
+
+article.resumo > p {
+    text-indent: 5px;
+}
+
+footer{
+    background: linear-gradient(to right, black, gray);
+    color: whitesmoke;
+}
