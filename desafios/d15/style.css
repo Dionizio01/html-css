@@ -1,70 +1,43 @@
 @charset "utf-8";
 
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: gray;
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 250px;
+    gap: 5px;
 }
 
-header{
-    background: linear-gradient(to right, black, gray) ;
-    color: whitesmoke;
-    text-align: center;
-    padding: 35px;
-}
-nav{
-    display: flex;
-    border: 2px solid gray;
-    background:linear-gradient(to right, black, gray);
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-}
-nav > a {
-    color: antiquewhite;
-    text-decoration: none;
-    font-family: fantasy;
-    padding: 5px;
-}
-
-main {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-main > div.imagem {
-    background-image: url(imagens/joaninha.jpg);
-    background-size: cover;
-    border: 5px solid black;
-    width: 70vw;
-    height: 70vh;
-}
-
-div.imagem > img{
-    display: block;
-    width: 70vw;
-    height: 70vh;
-}
-
-article.resumo {
-    width: 30vw;
-    height: 70vh;
-    font-family: Arial, Helvetica, sans-serif;
+.caixa {
+    background-color: lightgray;
+    border: 1px solid black;
     padding: 10px;
+    text-align: center;
 }
 
-article.resumo > h2{
-    padding-bottom: 10px;
+#topo{
+    grid-area: 1/1/2/3;
 }
 
-article.resumo > p {
-    text-indent: 5px;
+#menu{
+    grid-area: 2/1/3/3;
 }
 
-footer{
-    background: linear-gradient(to right, black, gray);
-    color: whitesmoke;
+#pincipal{
+    grid-area: 3/1/4/2;
+}
+
+#secundario{
+    grid-area: 3/2/4/-1;
+}
+#rodape{
+    grid-area: 4/1/-1/-1;
 }

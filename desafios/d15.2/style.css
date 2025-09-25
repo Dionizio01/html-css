@@ -8,7 +8,7 @@
 
 body{
     display: grid;
-    grid-template-rows: repeat(10, 90px);
+    grid-template-rows: repeat(20, 45px);
     grid-template-columns: repeat(3, 316px);
     gap: 5px;
 }
@@ -26,20 +26,20 @@ nav{
     grid-area: 4 / 1 / 5 / 4;
 }
 div.item1{
-    grid-area: 5 / 1 / 9 / 3;
+    grid-area: 5 / 1 / 18 / 3;
     border: 3px solid red;
     background-color: rgba(255, 0, 0, 0.315);
     display: flex;
 }
 
 div.item2{
-    grid-area: 5 / 3 / 9 / 4;
+    grid-area: 5 / 3 / 18 / 4;
     border: 3px solid green;
     background-color: bisque;
 }
 
 footer{
-    grid-area: 9 / 1 / -1 / -1;
+    grid-area: 18 / 1 / -1 / -1;
     border: 3px solid blue;
     background-color: rgba(0, 0, 255, 0.247);
 }
